@@ -40,7 +40,7 @@
 - git log: ログを表示, --onelineでコミットメッセージの1行のみの一覧表示
 - git diff: ファイルの差分を表示
 ### コミット系
-- git add \[ディレクトリ名(現在の位置であれば'.'でよい)\]: ステージングエリアに追加
+- git add [ディレクトリ名(現在の位置であれば'.'でよい)]: ステージングエリアに追加
 - git commit: コミットの実行
 ### 修正系
 - git commit --amend --no-edit: コミットの修正
@@ -51,11 +51,13 @@
 ### リモート系
 - git clone: レポジトリをコピー
 - git pull: リモートレポジトリの同期
+  - git pull origin [ReomteBranch]:[LocalBranch]: 特定のローカルブランチを特定のリモートブランチと同期する
 - git push: 変更をアップロードする
 - git request-pull: プルリクエスト:変更依頼
 - git remote: リモートレポジトリの設定
 ### ブランチ系
 - git branch: ブランチの作成
+  - git branch -u origin/[RemoteBranch]: 現在のローカルブランチに特定のリモートレポジトリを追跡設定する(これで`git pull`コマンドのみでそのリモートレポジトリと同期できる)
 - git checkout: ブランチの切り替え
 - git merge: ブランチの統合
   - --ff-only: fast forward only. 変更のない統合先ブランチにマージ

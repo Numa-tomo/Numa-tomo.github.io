@@ -63,3 +63,7 @@
   - --ff-only: fast forward only. 変更のない統合先ブランチにマージ
 - git clone \[GitHub URL\]: リモートレポジトリをローカルレポジトリにコピー
 - git push: 変更をアップロードする
+
+## GitHubのcloneとforkの違い
+- `fork`: (他人の)レポジトリをコピーして自分のアカウントに持ってくるもの
+- `clone`: GitHub上のレポジトリ(リモート)をPCのディレクトリ(ローカル)にコピーしてそのPCで編集ができるようにするもの
